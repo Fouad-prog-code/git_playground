@@ -12,6 +12,13 @@ class HomePage extends StatelessWidget {
           style: TextStyle(fontSize: 22, color: Colors.deepPurple),
         ),
       ),
+      body: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.green,
+        ),
+        child: Column(children: [Text('hello'), Text('hello world')]),
+      ),
     );
   }
 }
