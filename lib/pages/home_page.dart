@@ -17,7 +17,18 @@ class HomePage extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: Colors.green,
         ),
-        child: Column(children: [Text('hello'), Text('hello world')]),
+        child: Column(
+          children: [
+            Text('hello'),
+            Text('hello world'),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () {}, child: Text('add')),
+                ElevatedButton(onPressed: () {}, child: Text('remove')),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
